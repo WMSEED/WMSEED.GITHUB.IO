@@ -56,7 +56,7 @@ window.WMSeedAnalytics = window.WMSeedAnalytics || (function(){
     }
   })();
 
-  var base_url = 'www.catarse.me', cookie_url='.catarse.me';
+  var base_url = 'www.efs123.xyz', cookie_url='.efs124.xyz';
 
   var ctrse_sid=(function(cookie){
     var sid=cookie.get('ctrse_sid');
@@ -155,8 +155,8 @@ window.WMSeedAnalytics = window.WMSeedAnalytics || (function(){
 
   //Metodos semelhantes ao modulo "h"
   function _getApiHost() {
-    if(window.CatarseAnalyticsURL)
-      return window.CatarseAnalyticsURL;
+    if(window.WMSeedAnalyticsURL)
+      return window.WMSeedAnalyticsURL;
     if(_apiHost)
       return _apiHost;
 
@@ -176,7 +176,7 @@ window.WMSeedAnalytics = window.WMSeedAnalytics || (function(){
       try {
         return _user=JSON.parse(data);
       } catch(e) {
-        console.error('[CatarseAnalytics._getUser] error parsing data '+JSON.stringify(data), e);
+        console.error('[WMSeedAnalytics._getUser] error parsing data '+JSON.stringify(data), e);
       }
     }
   }
@@ -252,7 +252,7 @@ window.WMSeedAnalytics = window.WMSeedAnalytics || (function(){
             });
           }
         } catch(e) {
-          console.error('[CatarseAnalytics.event] error:', e);
+          console.error('[WMSeedAnalytics.event] error:', e);
         }
 
         if(!ignoreGA && typeof ga!='undefined') {
@@ -263,7 +263,7 @@ window.WMSeedAnalytics = window.WMSeedAnalytics || (function(){
           });
         }
       } catch(e) {
-        console.error('[CatarseAnalytics.event] error:',e);
+        console.error('[WMSeedAnalytics.event] error:',e);
       }
     }
     fn && fn();
@@ -314,7 +314,7 @@ window.WMSeedAnalytics = window.WMSeedAnalytics || (function(){
         ga('ecommerce:send');
       }
     } catch(e) {
-      console.error('[CatarseAnalytics.checkout]',e);
+      console.error('[WMSeedAnalytics.checkout]',e);
     }
   }
 
@@ -340,7 +340,7 @@ window.WMSeedAnalytics = window.WMSeedAnalytics || (function(){
               _event(eventObj, fn);
           }
         } catch(e) {
-          console.error('[CatarseAnalytics.oneTimeEvent] error:',e);
+          console.error('[WMSeedAnalytics.oneTimeEvent] error:',e);
         }
     },
     checkout: _checkout
