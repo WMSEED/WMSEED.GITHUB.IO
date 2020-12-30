@@ -17,19 +17,19 @@ App.addChild('Login', {
   },
 
   formSubmit: function() {
-    CatarseAnalytics.oneTimeEvent({cat:'account_login',act:'login_form_submit'});
+    WMSeedAnalytics.oneTimeEvent({cat:'account_login',act:'login_form_submit'});
   },
 
   formFulfill: function() {
-    CatarseAnalytics.oneTimeEvent({cat:'account_login',act:'login_data_fulfill'});
+    WMSeedAnalytics.oneTimeEvent({cat:'account_login',act:'login_data_fulfill'});
   },
 
   forgotClick: function() {
-    CatarseAnalytics.oneTimeEvent({cat:'account_login',act:'login_forgot_pass'});
+    WMSeedAnalytics.oneTimeEvent({cat:'account_login',act:'login_forgot_pass'});
   },
 
   signupClick: function() {
-    CatarseAnalytics.oneTimeEvent({cat:'account_login',act:'login_signup_link'});
+    WMSeedAnalytics.oneTimeEvent({cat:'account_login',act:'login_signup_link'});
   },
 
 });
@@ -47,19 +47,19 @@ App.addChild('Login', {
   },
 
   loginFBClick: function() {
-    CatarseAnalytics.oneTimeEvent({cat:'account_signup',act:'signup_fb_link'});
+    WMSeedAnalytics.oneTimeEvent({cat:'account_signup',act:'signup_fb_link'});
   },
 
   formSubmit: function() {
-    CatarseAnalytics.oneTimeEvent({cat:'account_signup',act:'signup_form_submit'});
+    WMSeedAnalytics.oneTimeEvent({cat:'account_signup',act:'signup_form_submit'});
   },
 
   formFulfill: function() {
-    CatarseAnalytics.oneTimeEvent({cat:'account_signup',act:'signup_data_fulfill'});
+    WMSeedAnalytics.oneTimeEvent({cat:'account_signup',act:'signup_data_fulfill'});
   },
 
   loginClick: function() {
-    CatarseAnalytics.oneTimeEvent({cat:'account_signup',act:'signup_login_link'});
+    WMSeedAnalytics.oneTimeEvent({cat:'account_signup',act:'signup_login_link'});
   },
 
 });
