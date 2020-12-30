@@ -1,5 +1,5 @@
 App.addChild("ResetPassword", {
-  el: '#catarse_bootstrap[data-controller-name="passwords"]',
+  el: '#wmseed_bootstrap[data-controller-name="passwords"]',
 
   events: {
     'change input#show_password': 'showPassword'
