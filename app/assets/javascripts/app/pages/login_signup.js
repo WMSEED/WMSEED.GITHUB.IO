@@ -13,7 +13,7 @@ App.addChild('Login', {
   },
 
   loginFBClick: function() {
-    CatarseAnalytics.oneTimeEvent({cat:'account_login',act:'login_fb_link'});
+    WMSeedAnalytics.oneTimeEvent({cat:'account_login',act:'login_fb_link'});
   },
 
   formSubmit: function() {
