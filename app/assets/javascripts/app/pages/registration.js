@@ -1,5 +1,5 @@
 App.addChild("Registration", {
-  el: '#catarse_bootstrap[data-controller-name="registrations"]',
+  el: '#wmseed_bootstrap[data-controller-name="registrations"]',
 
   events: {
     'change input#user_show_password': 'showPassword'
