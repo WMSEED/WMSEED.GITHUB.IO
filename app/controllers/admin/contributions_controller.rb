@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Admin::ContributionsController < Admin::BaseController
-  layout 'catarse_bootstrap'
+  layout 'wmseed_bootstrap'
 
   # batch_chargeback is used as external action in catarse.js
   def batch_chargeback
