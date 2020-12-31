@@ -96,9 +96,9 @@ class ApplicationController < ActionController::Base
 
   def public_settings
     {
-      base_url: CatarseSettings[:base_url],
-      support_forum: CatarseSettings[:support_forum],
-      blog_url: CatarseSettings[:blog_url]
+      base_url: WMSeedSettings[:base_url],
+      support_forum: WMSeedSettings[:support_forum],
+      blog_url: WMSeedSettings[:blog_url]
     }.to_json
   end
 
