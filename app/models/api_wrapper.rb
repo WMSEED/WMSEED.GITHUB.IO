@@ -9,7 +9,7 @@ class ApiWrapper
   end
 
   def jwt
-    @jwt ||= JsonWebToken.sign(claims, key: CatarseSettings[:jwt_secret])
+    @jwt ||= JsonWebToken.sign(claims, key: WMSeedSettings[:jwt_secret])
   end
 
   def request(endpoint, options = {})
