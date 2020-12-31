@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Admin::FinancialsController < Admin::BaseController
-  layout 'catarse_bootstrap'
+  layout 'wmseed_bootstrap'
   inherit_resources
   defaults  resource_class: Project, collection_name: 'projects', instance_name: 'project'
 
