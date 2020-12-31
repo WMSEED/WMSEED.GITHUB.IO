@@ -107,7 +107,7 @@ class Contribution < ActiveRecord::Base
   def invalid_refund
     notify(:invalid_refund, user)
     if over_refund_limit?
-      backoffice_user = User.find_by(email: CatarseSettings[:email_contact])
+      backoffice_user = User.find_by(email: WMseedSettings[:email_contact])
       notify_to_backoffice(:over_refund_limit, { from_email: user.email }, backoffice_user)
     end
   end
@@ -116,7 +116,7 @@ class Contribution < ActiveRecord::Base
     notify_once(template_name, user, self, options)
   end
 
-  def notify_to_backoffice(template_name, options = {}, backoffice_user = User.find_by(email: CatarseSettings[:email_payments]))
+  def notify_to_backoffice(template_name, options = {}, backoffice_user = User.find_by(email: WMseedSettings[:email_payments]))
     notify_once(template_name, backoffice_user, self, options) if backoffice_user
   end
 
