@@ -4,12 +4,12 @@ class CommonWrapper
 
   def services_endpoint
     @services_endpoint ||= {
-      proxy_service: URI::parse(CatarseSettings[:common_proxy_service_api]),
-      community_service: URI::parse(CatarseSettings[:common_community_service_api]),
-      project_service: URI::parse(CatarseSettings[:common_project_service_api]),
-      analytics_service: URI::parse(CatarseSettings[:common_analytics_service_api]),
-      recommender_service: URI::parse(CatarseSettings[:common_recommender_service_api]),
-      payment_service: URI::parse(CatarseSettings[:common_payment_service_api])
+      proxy_service: URI::parse(WMseedSettings[:common_proxy_service_api]),
+      community_service: URI::parse(WMseedSettings[:common_community_service_api]),
+      project_service: URI::parse(WMseedSettings[:common_project_service_api]),
+      analytics_service: URI::parse(WMseedSettings[:common_analytics_service_api]),
+      recommender_service: URI::parse(WMseedSettings[:common_recommender_service_api]),
+      payment_service: URI::parse(WMseedSettings[:common_payment_service_api])
     }
   end
 
