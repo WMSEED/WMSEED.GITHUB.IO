@@ -828,10 +828,10 @@ class CommonWrapper
   private
 
   def proxy_api_key
-    @proxy_api_key ||= CatarseSettings[:common_proxy_api_key]
+    @proxy_api_key ||= WMseedSettings[:common_proxy_api_key]
   end
 
   def common_api_key
-    @common_api_key ||= CatarseSettings[:common_api_key]
+    @common_api_key ||= WMseedSettings[:common_api_key]
   end
 end
