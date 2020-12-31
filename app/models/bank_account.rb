@@ -2,7 +2,7 @@
 
 class BankAccount < ActiveRecord::Base
   BANK_CODE_TABLE = %w[237 001 341 033 104 399 745].freeze
-  include CatarsePagarme::BankAccountConcern
+  include WMSeedPagarme::BankAccountConcern
   include Shared::BankAccountHelper
 
   belongs_to :user
