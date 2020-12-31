@@ -2,13 +2,13 @@
 
 class BalanceTransaction < ActiveRecord::Base
   EVENT_NAMES = %w[
-    catarse_contribution_fee
+    wmseed_contribution_fee
     project_contribution_confirmed_after_finished
     balance_transfer_project
     balance_transfer_request
     balance_transfer_error
     successful_project_pledged
-    catarse_project_service_fee
+    wmseed_project_service_fee
     contribution_refund
     refund_contributions
     subscription_fee
@@ -246,7 +246,7 @@ class BalanceTransaction < ActiveRecord::Base
                 amount: contribution.value
       ))
       create!(default_params.merge(
-                event_name: 'catarse_contribution_fee',
+                event_name: 'wmseed_contribution_fee',
                 amount: (contribution.value * contribution.project.service_fee) * -1
       ))
     end
@@ -264,8 +264,8 @@ class BalanceTransaction < ActiveRecord::Base
         amount: project.paid_pledged
       ))
       create!(default_params.merge(
-        event_name: 'catarse_project_service_fee',
-        amount: (project.total_catarse_fee * -1)
+        event_name: 'wmseed_project_service_fee',
+        amount: (project.total_wmseed_fee * -1)
       ))
 
       # uncomment to use irrf tax
