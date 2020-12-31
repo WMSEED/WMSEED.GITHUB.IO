@@ -2,7 +2,7 @@ class MailMarketingUsersController < ApplicationController
   def subscribe
     email = params['EMAIL']
     mail_list = MailMarketingList.find_by(
-      list_id: (params[:list_id] || CatarseSettings[:sendgrid_newsletter_list_id])
+      list_id: (params[:list_id] || WMSeedSettings[:sendgrid_newsletter_list_id])
     )
 
     if email =~ EMAIL_REGEX
@@ -30,7 +30,7 @@ class MailMarketingUsersController < ApplicationController
 
   def sendgrid_api
     @sendgrid ||= SendGrid::API.new(
-      api_key: CatarseSettings[:sendgrid_mkt_api_key])
+      api_key: WMSeedSettings[:sendgrid_mkt_api_key])
   end
 
   def push_to_sendgrid email, mail_list
