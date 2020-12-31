@@ -120,7 +120,7 @@ class Projects::ContributionsController < ApplicationController
 
   def send_delivery_notification(contributions, status, template_name)
     contributions.where.not(delivery_status: status).each do |contribution|
-      Notification.create!(user_id: contribution.user_id, user_email: contribution.user.email, template_name: template_name, metadata: { locale: 'pt', message: params['message'], from_name: "#{contribution.project.user.display_name} via Catarse", from_email: contribution.project.user.email, associations: { project_id: contribution.project.id, contribution_id: contribution.id } }.to_json)
+      Notification.create!(user_id: contribution.user_id, user_email: contribution.user.email, template_name: template_name, metadata: { locale: 'pt', message: params['message'], from_name: "#{contribution.project.user.display_name} via WMSeed", from_email: contribution.project.user.email, associations: { project_id: contribution.project.id, contribution_id: contribution.id } }.to_json)
     end
   end
 
