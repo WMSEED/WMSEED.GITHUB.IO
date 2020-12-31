@@ -6,7 +6,7 @@ class ApiTokensController < ApplicationController
   before_filter :set_cache_headers
 
   def common_proxy
-    proxy_api_key = CatarseSettings[:common_proxy_api_key]
+    proxy_api_key = WMSeedSettings[:common_proxy_api_key]
     unless proxy_api_key.present?
       return render json: { error: 'you need to have common_proxy_api_key setted' }, status: 500
     end
@@ -21,7 +21,7 @@ class ApiTokensController < ApplicationController
   end
 
   def common
-    unless CatarseSettings[:common_api_key]
+    unless WMSeedSettings[:common_api_key]
       return render json: { error: 'you need to have common_api_key setted' }, status: 500
     end
 
@@ -35,7 +35,7 @@ class ApiTokensController < ApplicationController
   end
 
   def show
-    unless CatarseSettings[:api_host].present? && CatarseSettings[:jwt_secret].present?
+    unless WMSeedSettings[:api_host].present? && WMSeedSettings[:jwt_secret].present?
       return render json: { error: 'you need to have api_host and jwt_secret configured to get an API token' }, status: 500
     end
 
