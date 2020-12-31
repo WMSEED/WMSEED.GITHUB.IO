@@ -3,7 +3,7 @@
 # This controller is only a wrapper to trigger chargeback 
 # on common wrapper
 class Admin::SubscriptionPaymentsController < Admin::BaseController
-  layout 'catarse_bootstrap'
+  layout 'wmseed_bootstrap'
 
   # batch_chargeback is used as external action in catarse.js
   def batch_chargeback
