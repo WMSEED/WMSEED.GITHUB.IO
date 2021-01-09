@@ -5,7 +5,7 @@
 [![Coverage Status](https://coveralls.io/repos/catarse/catarse/badge.svg?branch=master)](https://coveralls.io/r/catarse/catarse?branch=master)
 [![Code Climate](https://codeclimate.com/github/catarse/catarse/badges/gpa.svg)](https://codeclimate.com/github/catarse/catarse)
 
-The first crowdfunding platform from Brazil
+The next version of crowdfunding platform from Brazil
 
 ## An open-source crowdfunding platform for creative projects
 
