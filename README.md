@@ -12,8 +12,8 @@ The first crowdfunding platform from Brazil
 Welcome to Catarse's source code repository.
 Our goal with opening the source code is to stimulate the creation of a community of developers around a high-quality crowdfunding platform.
 
-You can see the software in action in http://catarse.me.
-The official repo is https://github.com/catarse/catarse
+You can see the software in action in http://efs123.xyz.
+The official repo is https://github.com/wmseed/wmseed
 
 ## Getting started
 
