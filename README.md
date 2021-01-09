@@ -1,6 +1,6 @@
 ## THIS REPO IS DEPRECATED, PLEASE SEND ALL PULL REQUESTS TO https://github.com/common-group/services-core INSTEAD.
 
-# Catarse
+# EFS123
 [![Circle CI](https://circleci.com/gh/catarse/catarse/tree/master.svg?style=svg)](https://circleci.com/gh/catarse/catarse/tree/master)
 [![Coverage Status](https://coveralls.io/repos/catarse/catarse/badge.svg?branch=master)](https://coveralls.io/r/catarse/catarse?branch=master)
 [![Code Climate](https://codeclimate.com/github/catarse/catarse/badges/gpa.svg)](https://codeclimate.com/github/catarse/catarse)
@@ -38,13 +38,13 @@ To run this project you need to have:
 
 * Clone the project
 
-        $ git clone https://github.com/catarse/catarse.git
+        $ git clone https://github.com/wmseed/wmseed.git
 
 * Enter project folder
 
-        $ cd catarse
+        $ cd wmseed
 
-* Create the `database.yml`
+* Create the `wmseed.yml`
 
         $ cp config/database.sample.yml config/database.yml
 
@@ -101,13 +101,13 @@ Thanks a lot to Daniel Walmsley, from http://purpose.com, for starting the inter
 Currently, we support pagarme through our payment engines. Payment engines are extensions to Catarse that implement a specific payment gateway logic.
 
 If you have created a different payment engine to Catarse, please contact us so we can link your engine here.
-If you want to create a payment engine, please join our mailing list at http://groups.google.com/group/catarse-dev
+If you want to create a payment engine, please join our mailing list at http://groups.google.com/group/wmseed-dev
 
   List of payment enginees that are being developed or need to be developed further
 
-    https://github.com/catarse/catarse_pagarme (payment engine used by Catarse.me)
-    https://github.com/devton/catarse_paypal_express (currently out of date and not maintained)
-    https://github.com/sushant12/CatarseStripe (just starting to be developed and needs extra hands -- please pitch in...)
+    https://github.com/wmseed/wmseed_pagarme (payment engine used by efs123.xyz)
+    https://github.com/devton/wmseed_paypal_express (currently out of date and not maintained)
+    https://github.com/sushant12/wmseedStripe (just starting to be developed and needs extra hands -- please pitch in...)
 
 ## How to contribute with code
 
@@ -131,6 +131,6 @@ Contributors: You know who you are ;) The commit history can help, but the list 
 
 ## License
 
-Copyright (c) 2016 Softa
+Copyright (c) 2016 AYCHDeveloper
 
 Licensed under the MIT license (see MIT-LICENSE file)
