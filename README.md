@@ -16,7 +16,7 @@ You can see the software in action in https://efs123.xyz.
 The official repo is https://github.com/wmseed/wmseed
 
 WMSEED on Slack at https://Wmseed.slack.com
-WMSEED Development Community  https://gitter.im/wmseed/community.
+WMSEED Development Community  https://gitter.im/wmseen/community.
 
 EFS123 on Slack https://Efs123.slack.com
 EFS123 Development Community https://gitter.im/EFS-123/community.
