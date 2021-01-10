@@ -1,9 +1,9 @@
 ## THIS REPO IS DEPRECATED, PLEASE SEND ALL PULL REQUESTS TO https://github.com/common-group/services-core INSTEAD.
 
 # EFS123
-[![Circle CI](https://circleci.com/gh/catarse/catarse/tree/master.svg?style=svg)](https://circleci.com/gh/catarse/catarse/tree/master)
-[![Coverage Status](https://coveralls.io/repos/catarse/catarse/badge.svg?branch=master)](https://coveralls.io/r/catarse/catarse?branch=master)
-[![Code Climate](https://codeclimate.com/github/catarse/catarse/badges/gpa.svg)](https://codeclimate.com/github/catarse/catarse)
+[![Circle CI](https://circleci.com/gh/wmseed/wmseed/tree/master.svg?style=svg)](https://circleci.com/gh/wmseed/wmseed/tree/master)
+[![Coverage Status](https://coveralls.io/repos/wmseed/wmseed/badge.svg?branch=master)](https://coveralls.io/r/wmseed/wmseed?branch=master)
+[![Code Climate](https://codeclimate.com/github/wmseed/wmseed/badges/gpa.svg)](https://codeclimate.com/github/wmseed/wmseed)
 
 The next version of crowdfunding platform from Brazil
 
@@ -14,6 +14,8 @@ Our goal with opening the source code is to stimulate the creation of a communit
 
 You can see the software in action in https://efs123.xyz.
 The official repo is https://github.com/wmseed/wmseed
+
+[WMSEED on Slack (https://Wmseed.slack.com)]  [WMSEED Development Community  (https://gitter.im/wmseed/community)]  [EFS123 on Slack (https://Efs123.slack.com)]  [EFS123 Development Community (https://gitter.im/EFS-123/communit)].
 
 ## Getting started
 
